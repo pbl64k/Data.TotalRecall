@@ -1,0 +1,12 @@
+Data.TotalRecall is a prototype Haskell library for working with mnemonic
+values and operations. This currently lacks pretty much everything that
+could make it actually useful (such as HOFs and mnemonic lambdas), but it
+demonstrates the concept fairly well.
+
+test.hs will create a set .xml files with the results of sample
+calculations.
+
+xml2xhtml will transform these files into an XHTML1 page for reviewing
+the values and memories in a human-readable form. xml2xhtml requries
+xsltproc.
+
