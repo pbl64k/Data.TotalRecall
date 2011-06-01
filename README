@@ -1,12 +1,24 @@
 Data.TotalRecall is a prototype Haskell library for working with mnemonic
-values and operations. This currently lacks pretty much everything that
-could make it actually useful (such as HOFs and mnemonic lambdas), but it
-demonstrates the concept fairly well.
+values and operations. This currently lacks pretty much everything apart
+from basic arithmetics and conditionals (such as any mnemonic data
+structures and HOFs), but it demonstrates the concept fairly well. Note
+that the reduce function allows generation of histories for partially
+applied (or altogether unapplied) functions.
 
-test.hs will create a set .xml files with the results of sample
-calculations.
+test.hs will create a set of .xml files with the results of sample
+calculations. The test function called k is extremely simple, while
+commissionPercent (and its helper functions) is much closer to the actual
+use case envisioned.
 
-xml2xhtml will transform these files into an XHTML1 page for reviewing
-the values and memories in a human-readable form. xml2xhtml requries
-xsltproc.
+Identity monad is used only for the purposes of enabling the do syntax.
 
+xml2xhtml.sh will transform the resulting XML files into an XHTML1 page
+for reviewing the values and memories in a human-readable form. xml2xhtml
+requries xsltproc.
+
+Unfortunately, something like this can only be efficient in a language
+with operator overloading, and Haskell, in particular, offers a few
+unique advantages (Reducible typeclass, HOFs functions solving many
+problems neatly) - but using mnemonic values in a wider context would
+require shadowing much of standard library with implementations
+supporting those out of the box.
