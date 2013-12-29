@@ -1,6 +1,6 @@
 
 <!--
-    Copyright 2010, 2011 Pavel Lepin
+    Copyright 2010, 2011, 2013 Pavel Lepin
     
     This file is part of Data.TotalRecall.
     

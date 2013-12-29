@@ -1,7 +1,7 @@
 {-# OPTIONS -fglasgow-exts #-}
 
 {-
-    Copyright 2010, 2011 Pavel Lepin
+    Copyright 2010, 2011, 2013 Pavel Lepin
     
     This file is part of Data.TotalRecall.
     
@@ -20,18 +20,18 @@
 -}
 
 module Data.TotalRecall (
-	Value,
+    Value,
     Description(dumpDescription),
     Reducible(reduce),
     reduceToInteger,
     (|-),
     (|--),
-	lift1,
-	lift2,
-	lift3,
-	(~!),
-	(&&),
-	(||),
+    lift1,
+    lift2,
+    lift3,
+    (~!),
+    (&&),
+    (||),
     (~-),
     (+),
     (-),
@@ -44,7 +44,7 @@ module Data.TotalRecall (
     (>),
     (>=),
     (<=),
-	(>=<),
+    (>=<),
     branch,
     run,
     ($),
